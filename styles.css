@@ -1,15 +1,21 @@
 body {
-    background-color: black;
-    color: white;
+    background-color: rgb(245, 225, 184);
+    color: black;
 }
 
 h1 {
     font-size: 20px;
+    border: dotted;
+    border-width: 2px;
 }
 
 p {
-    font-size: 12px;
-    color: green;
+    font-size: 20px;
+    color: black;
+    background-color: aquamarine;
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px; 
 }
 
 .divclass {
@@ -25,4 +31,38 @@ ol {
 
 ul {
     list-style-type: square;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+nav {
+    float: left;
+    width: 30%;
+    background: #ccc;
+    padding: 20px;
+  }
+article {
+    float: right;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+  }
+  header {
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
 }
