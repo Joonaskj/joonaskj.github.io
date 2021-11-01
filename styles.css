@@ -38,14 +38,14 @@ ul {
   
 nav {
     float: left;
-    width: 30%;
+    width: auto;
     background: #ccc;
     padding: 20px;
   }
 article {
     float: right;
     padding: 20px;
-    width: 70%;
+    width: 80%;
     background-color: #f1f1f1;
   }
 header {
@@ -55,14 +55,48 @@ header {
   font-size: 35px;
   color: white;
   }
-  section::after {
-    content: "";
-    display: table;
-    clear: both;
+section {
+  float: left;
+  content: "";
+  width: 65%;
+  display: table;
+  clear: both;
   }
+
   @media (max-width: 600px) {
     nav, article {
       width: 100%;
       height: auto;
     }
+}
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 8px;
+  background-color: #e09494;
+  color: #ffffff;
+}
+
+.menu li:hover {
+  background-color: #d15c5c;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.column {
+  float: left;
+  padding: 15px;
+}
+.content {
+  width: 75%;
+}
+.menu {
+  width: 25%;
 }
