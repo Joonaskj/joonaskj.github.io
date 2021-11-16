@@ -1,0 +1,27 @@
+body {
+    background-color: beige;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+table{
+    margin:auto;
+    padding: 5 5 5 5;
+    border:solid
+}
+tr, th, td {
+    border:solid;
+}
+
+
+form{
+    text-align: center;
+    padding: 5px;
+}
+input{
+    width: 250px;
+}
+.submit {
+    width: 100px;
+}
+
